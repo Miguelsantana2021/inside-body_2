@@ -1,0 +1,204 @@
+/* Estilo para a seção de sistemas */
+section.system-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilo para cada bloco de sistema */
+.system-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 20px); /* Ocupa 1/3 do container */
+    min-width: 250px;
+    text-align: center;
+}
+
+/* Estilo para o título do sistema */
+.system-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Estilo para a descrição */
+.system-box p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os botões */
+.system-box a {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.system-box a:hover {
+    background-color: #cc0000;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .system-box {
+        flex: 1 1 100%; /* Ocupa 100% da largura no celular */
+    }
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+
+
+ 
+    margin: 0;
+    padding: 0;
+
+}
+/* Configurando o parallax */
+.parallax-image {
+    position: relative;
+    height: 100vh;
+    background-image: url('fundojpg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 0.8s ease-out;
+}
+
+/* Fazendo a imagem sumir ao rolar a página */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.parallax-image.fade {
+    animation: fadeOut 1s forwards;
+}
+
+/* Estilização padrão */
+body {
+    font-family: Arial, sans-serif;
+    background: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+/* Estilização de links */
+a {
+    text-decoration: none;
+    color: white;
+    background-color: #FF6347;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #e55347;
+}
+
+
+/* Links estilizados como botões */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: #fff;
+    background-color: #e63946;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #d62839;
+    border: 2px solid #e63946;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo do fundo com parallax */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('cavera.jpeg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.7;
+    filter: blur(2px);
+}
+
+/* Estilo das seções */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+    color: #e63946;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+}
+
+/* Melhorias na tipografia */
+p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Botões em geral */
+button, input[type="submit"] {
+    background-color: #e63946;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #d62839;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
